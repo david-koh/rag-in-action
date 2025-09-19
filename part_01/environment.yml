@@ -15,3 +15,5 @@ dependencies:
     - pypdf>=3.0.0
     - unstructured>=0.10.0
     - tiktoken>=0.5.0
+    - ollama>=0.1.0
+    - jupyter>=1.0.0

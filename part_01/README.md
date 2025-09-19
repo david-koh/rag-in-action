@@ -10,6 +10,9 @@ A step-by-step guide to building a basic Retrieval-Augmented Generation system f
 ```bash
 conda env create -f environment.yml
 conda activate rag-tutorial
+
+# Mac M1/M2 optimization
+export PYTORCH_ENABLE_MPS_FALLBACK=1
 ```
 
 **Option 2: pip**
@@ -22,7 +25,7 @@ pip install -r requirements.txt
 **macOS:**
 ```bash
 brew install ollama
-ollama pull llama3.1:8b
+ollama pull llama3.1:8b  # ~4GB download
 ollama serve
 ```
 
@@ -31,6 +34,13 @@ ollama serve
 curl -fsSL https://ollama.ai/install.sh | sh
 ollama pull llama3.1:8b
 ollama serve
+```
+
+### Test Installation
+
+```bash
+# Test LLM limitations (before RAG)
+python 01_test_llm_limitations.py
 ```
 
 ### Run the Tutorial

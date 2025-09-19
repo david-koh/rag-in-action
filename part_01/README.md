@@ -4,6 +4,24 @@ A step-by-step guide to building a basic Retrieval-Augmented Generation system f
 
 ## Quick Start
 
+### Install Conda (if not already installed)
+
+**macOS:**
+```bash
+# Install Miniconda (lightweight)
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
+
+# Or with Homebrew
+brew install miniconda
+```
+
+**Linux:**
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
 ### Environment Setup
 
 **Option 1: Conda (Recommended)**
@@ -41,6 +59,19 @@ ollama serve
 ```bash
 # Test LLM limitations (before RAG)
 python 01_test_llm_limitations.py
+```
+
+### Install Jupyter (if not already installed)
+
+**Option 1: With conda environment**
+```bash
+# Jupyter is already included in environment.yml
+conda activate rag-tutorial
+```
+
+**Option 2: With pip**
+```bash
+pip install jupyter
 ```
 
 ### Run the Tutorial

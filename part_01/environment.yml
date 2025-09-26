@@ -1,4 +1,4 @@
-name: rag-tutorial
+name: rag-in-action-part1
 channels:
   - conda-forge
   - defaults

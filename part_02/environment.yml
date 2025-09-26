@@ -1,0 +1,24 @@
+# RAG in Action - Part 2: Mastering Qdrant
+# Production-grade vector database with metadata filtering
+
+name: rag-in-action-part2
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    # Core dependencies
+    - langchain>=0.1.0
+    - langchain-community>=0.0.20
+    - qdrant-client>=1.7.0
+    - sentence-transformers>=2.2.0
+    - transformers>=4.30.0
+    - torch>=2.0.0
+    - pypdf>=3.0.0
+    - ollama>=0.1.0
+    - jupyter>=1.0.0
+    # Part 2 specific dependencies
+    - tqdm>=4.65.0         # Progress bars for indexing
+    - psutil>=5.9.0        # System resource monitoring

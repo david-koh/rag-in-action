@@ -27,7 +27,7 @@ bash Miniconda3-latest-Linux-x86_64.sh
 **Option 1: Conda (Recommended)**
 ```bash
 conda env create -f environment.yml
-conda activate rag-tutorial
+conda activate rag-in-action-part1
 
 # Mac M1/M2 optimization
 export PYTORCH_ENABLE_MPS_FALLBACK=1
@@ -66,12 +66,18 @@ python 01_test_llm_limitations.py
 **Option 1: With conda environment**
 ```bash
 # Jupyter is already included in environment.yml
-conda activate rag-tutorial
+conda activate rag-in-action-part1
 ```
 
 **Option 2: With pip**
 ```bash
 pip install jupyter
+```
+
+### Download Sample Data
+
+```bash
+python data/download_data.py
 ```
 
 ### Run the Tutorial
